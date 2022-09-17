@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I have been created cruds app by html, javascript and scss.
+    You can create, read, update, delete and search by title of category of the product.
+    You can filter products by title, category, price and Alphabet letters also" />
+    <title>javascript cruds</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+<div class="cruds-container">
+
+    <h1>javascript Cruds</h1>
+
+    <div class="cruds-body">
+        <input type="text" placeholder="Product name" id="title" />
+
+        <div class="curds-price">
+            <input type="number" id="price" placeholder="Price" />
+            <input type="number" id="taxes" placeholder="Taxes" />
+            <input type="number" id="ads" placeholder="Ads" />
+            <input type="number" id="discount" placeholder="Discount" />
+
+            <div id="total">
+                
+            </div>
+        </div>
+
+        <div class="quantity">
+            <input type="number" id="count" placeholder="Count" />
+            <input type="text" id="category" placeholder="Category" />
+        </div>
+
+        <button id="create">Create</button>
+
+        <div class="cruds-search">
+            <input type="search" id="search" placeholder="Search by name" />
+
+            <div class="cruds-btns">
+                <button id="searchTitleBtn">Search by Title</button>
+                <button id="searchCategoryBtn">Search by Category</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+<div class="filter">
+    <h2>Products Information</h2>
+    
+    <div class="filter-content">
+        <div class="filter-box">
+            <div class="filter-box-item">
+                <label for="filter-name">Filter by name</label>
+                <select name="" id="filter-name">
+                    
+                </select>
+            </div>
+        </div>
+
+        <div class="filter-box">
+            <div class="filter-box-item">
+                <label for="filter-category">Filter by category</label>
+                <select name="" id="filter-category">
+                    
+
+                </select>
+            </div>
+        </div>
+
+        <div class="filter-box">
+            <div class="filter-box-item">
+                <label for="filter-price">Filter by total price</label>
+                <select name="" id="filter-price">
+                    <option>low</option>
+                    <option>high</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="filter-box">
+            <div class="filter-box-item">
+                <label for="filter-alphabet">Filter by Alphabet</label>
+                <select name="" id="filter-alphabet">
+                    <option value="A - Z">A - Z</option>
+                    <option value="Z - A">Z - A</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <button id="clear">Clear</button>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nama</th>
+            <th>Price</th>
+            <th>Ads</th>
+            <th>Discount</th>
+            <th>Total</th>
+            <th>Category</th>
+            <th>Update</th>
+            <th>Remove</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <!-- will be created by js -->
+    </tbody>
+</table>
+
+
+
+
+<script src="./js/main.js"></script>
+</body>
+</html>

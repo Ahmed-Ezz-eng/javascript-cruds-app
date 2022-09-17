@@ -1,0 +1,15 @@
+
+@mixin addPrefix($name, $value, $browsers) {
+    @each $prefix in $browsers{
+        #{'-' + $prefix + "-" + $name}: $value;
+    }
+
+    #{$name}: $value;
+}
+
+
+@mixin  centering {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
